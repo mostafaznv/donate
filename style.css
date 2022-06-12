@@ -66,4 +66,8 @@ main > h1 a {
     .donation-container {
         flex-direction: column;
     }
+    
+    .donation-box {
+        padding: 24px 12px;
+    }
 }
