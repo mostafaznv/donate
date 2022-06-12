@@ -28,6 +28,7 @@ main {
     padding: 54px 24px;
     min-width: 330px;
     max-width: 330px;
+    margin: 0 12px;
 }
 
 .donation-box .icon {
