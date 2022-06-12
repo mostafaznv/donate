@@ -36,7 +36,8 @@ main > h1 a {
     padding: 54px 24px;
     min-width: 330px;
     max-width: 330px;
-    margin: 0 12px;
+    margin: 12px;
+    font-size: 22px;
 }
 
 .donation-box .icon {
@@ -58,6 +59,10 @@ main > h1 a {
 }
 
 @media only screen and (max-width: 600px) {
+    main {
+        height: auto;
+    }
+    
     .donation-container {
         flex-direction: column;
     }
