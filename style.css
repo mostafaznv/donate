@@ -56,3 +56,9 @@ main > h1 a {
     margin: 24px 0;
     display: block;
 }
+
+@media only screen and (max-width: 600px) {
+    .donation-container {
+        flex-direction: column;
+    }
+}
