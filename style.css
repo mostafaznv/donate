@@ -17,6 +17,14 @@ main {
     flex-direction: column;
 }
 
+main > h1 {
+    margin-bottom: 48px;
+}
+
+main > h1 a {
+    text-decoration: none;
+}
+
 .donation-container {
     display: flex;
     align-items: center;
