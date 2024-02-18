@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     ssr: false,
     
     app: {
+        baseURL: '/donate/',
+        
         head: {
             title: 'Donate',
             
