@@ -22,9 +22,11 @@
         <v-col v-for="wallet in wallets" cols="12" md="4" :key="wallet.key">
             <d-glow-card @click="copy(wallet)" class="cursor-pointer" fill-height>
                 <div class="d-flex flex-column align-center justify-center text-center fill-height py-3">
-                    <d-btc-icon v-if="wallet.key === 'btc'" />
-                    <d-eth-icon v-else-if="wallet.key === 'eth'" />
-                    <d-usdt-icon v-else-if="wallet.key === 'usdt'" />
+                    <div>
+                        <d-btc-icon v-if="wallet.key === 'btc'" />
+                        <d-eth-icon v-else-if="wallet.key === 'eth'" />
+                        <d-usdt-icon v-else-if="wallet.key === 'usdt'" />
+                    </div>
 
                     <h3 class="mt-2 mb-4 d-flex align-center ga-1">
                         <span>{{ wallet.label }}</span>
@@ -34,6 +36,12 @@
                             {{ wallet.network }}
                         </span>
                     </h3>
+
+                    <div class="mb-4">
+                        <d-btc-qr v-if="wallet.key === 'btc'" />
+                        <d-eth-qr v-else-if="wallet.key === 'eth'" />
+                        <d-usdt-qr v-else-if="wallet.key === 'usdt'" />
+                    </div>
 
                     <span class="font-weight-light text-body-3" :title="wallet.address">
                         {{ wallet.address }}
