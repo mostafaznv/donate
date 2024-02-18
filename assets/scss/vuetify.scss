@@ -1,0 +1,253 @@
+$font-family: 'Figtree', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+"Noto Color Emoji";
+
+$typography: (
+    'h1': (
+        'size': 38px,
+        'weight': 700,
+        'line-height': 42px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'h2': (
+        'size': 30px,
+        'weight': 700,
+        'line-height': 40px,
+        'letter-spacing': 2px,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'h3': (
+        'size': 24px,
+        'weight': 400,
+        'line-height': 36px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'h4': (
+        'size': 20px,
+        'weight': 700,
+        'line-height': 20px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'h5': (
+        'size': 18px,
+        'weight': 700,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'h6': (
+        'size': 16px,
+        'weight': 700,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'display-1': (
+        'size': 32px,
+        'weight': 700,
+        'line-height': 48px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'display-2': (
+        'size': 32px,
+        'weight': 400,
+        'line-height': 48px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'title-1': (
+        'size': 18px,
+        'weight': 700,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'title-2': (
+        'size': 16px,
+        'weight': 700,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'title-3': (
+        'size': 14px,
+        'weight': 700,
+        'line-height': 22px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'title-4': (
+        'size': 12px,
+        'weight': 700,
+        'line-height': 20px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'body-1': (
+        'size': 18px,
+        'weight': 500,
+        'line-height': 28px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'body-2': (
+        'size': 16px,
+        'weight': 500,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'body-3': (
+        'size': 14px,
+        'weight': 500,
+        'line-height': 22px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'body-4': (
+        'size': 12px,
+        'weight': 500,
+        'line-height': 20px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'caption-1': (
+        'size': 16px,
+        'weight': 300,
+        'line-height': 24px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'caption-2': (
+        'size': 14px,
+        'weight': 300,
+        'line-height': 22px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'caption-3': (
+        'size': 12px,
+        'weight': 300,
+        'line-height': 20px,
+        'letter-spacing': normal,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'button': (
+        'size': 16px,
+        'weight': 600,
+        'line-height': 24px,
+        'letter-spacing': 0,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'button-small': (
+        'size': 13px,
+        'weight': 600,
+        'line-height': 22px,
+        'letter-spacing': 0,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'placeholder-title': (
+        'size': 13px,
+        'weight': 500,
+        'line-height': 22px,
+        'letter-spacing': 2px,
+        'font-family': $font-family,
+        'text-transform': none
+    ),
+    'placeholder-text': (
+        'size': 14px,
+        'weight': 400,
+        'line-height': 24px,
+        'letter-spacing': 1px,
+        'font-family': $font-family,
+        'text-transform': none
+    )
+);
+
+$size-scales: (
+    'x-small': -1.75,
+    'small': -1,
+    'default': 0,
+    'large': 1,
+    'x-large': 2
+);
+
+
+@use "vuetify/settings" with (
+    $color-pack: false,
+    // typography
+    $body-font-family: $font-family,
+    $font-size-root: 18px,
+    $typography: $typography,
+    // buttons
+    $button-height: 48px,
+    $button-font-size: 16px,
+    $button-font-weight: 600,
+    $button-padding-ratio: 2,
+    $button-border-radius: 10px,
+    $button-icon-border-radius: 'pill',
+    $size-scales: $size-scales,
+    // inputs
+    $field-border-radius: 10px,
+    $input-density: ('default': -1.25, 'comfortable': -3.25, 'compact': -4),
+    // snackbars
+    $snackbar-border-radius: 4px,
+    $snackbar-font-size: 14px,
+    $snackbar-font-weight: 600,
+    $snackbar-line-height: 22px,
+    // alerts
+    $alert-border-radius: 10px,
+    $alert-border-thin-width: 1px,
+    $alert-border-width: 1px,
+    $alert-title-font-size: 14px,
+    $alert-title-font-weight: 600,
+    $alert-title-line-height: 22px,
+    $alert-title-text-transform: capitalize,
+    $alert-text-line-height: 22px,
+    // tooltips
+    $tooltip-background-color: #45484C,
+    $tooltip-text-color: white,
+    $tooltip-border-radius: 8px,
+    $tooltip-font-size: 14px,
+    $tooltip-line-height: 22px,
+    $tooltip-padding: 12px 16px,
+    // badges
+    $badge-font-size: 10px,
+    $badge-font-weight: 600,
+    $badge-height: 16px,
+    // dialog
+    $dialog-border-radius: 6px,
+    $dialog-card-header-padding: 24px 24px 0,
+    $dialog-card-text-padding: 24px 24px 10px,
+    // switch.scss
+    $switch-inset-thumb-height: 14px,
+    $switch-inset-thumb-width: 14px !important,
+    $switch-inset-track-height: 22px !important,
+    $switch-inset-track-width: 42px !important,
+    $switch-track-background: rgba(var(--v-theme-surface-variant), 0.2) !important,
+);

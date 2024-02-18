@@ -1,0 +1,8 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    color: rgb(var(--v-theme-warning));
+}

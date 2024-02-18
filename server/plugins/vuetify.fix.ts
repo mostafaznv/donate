@@ -1,0 +1,11 @@
+import type {RenderResponse} from 'nitropack'
+
+
+/**
+ * https://github.com/nuxt/nuxt/issues/15412#issuecomment-1398110500
+ */
+export default defineNitroPlugin((nitroApp: any) => {
+    nitroApp.hooks.hook('render:response', (response: RenderResponse) => {
+        response.body = response.body.replaceAll('/_nuxt/\0', '/_nuxt/')
+    })
+})
