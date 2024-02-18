@@ -29,10 +29,10 @@
                     </div>
 
                     <h3 class="mt-2 mb-4 d-flex align-center ga-1">
-                        <span>{{ wallet.label }}</span>
+                        <span class="text-primary">{{ wallet.label }}</span>
 
 
-                        <span class="bg-secondary rounded px-1 font-weight-light text-title-4 mt-1">
+                        <span class="bg-primary rounded px-1 font-weight-light text-title-4 mt-1">
                             {{ wallet.network }}
                         </span>
                     </h3>
